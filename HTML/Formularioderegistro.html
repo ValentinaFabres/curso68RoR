@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <form action="process.php" method="post">
+        <p>Mi Formulario de Registro</p>
+        <br> <label for="nombre">Nombre:</label>
+</head>
+
+<body>
+    <input type="text" id="nombre" name="nombre">
+    <br>
+    <br>
+
+    <label for="apellido">Apellido:</label>
+
+    <input type="text" id="apellido" name="apellido">
+    <br>
+    <br>
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email">
+    <br>
+    <br>
+
+    <label for="Contraseña">Contrase&ntilde;a:</label>
+
+    <input type="text" id="Contraseña" name="Contraseña">
+    <br>
+    <br>
+
+    <label for="Confirmar">Confirmar:</label>
+
+    <input type="text" id="Confirmar" name="Confirmar">
+    <br>
+
+    <br>
+    <meta charset="UTF-8">
+    <label for="fecha">Cumpleaños:</label>
+
+    <input type="date" id="fecha" name="Cumpleaños">
+    <br>
+    <br>
+    <p>Selecciona tu género:</p>
+    <br>
+
+    <input type="radio" id="masculino" name="genero" value="masculino">
+    <label for="masculino">Hombre</label>
+    <input type="radio" id="femenino" name="genero" value="femenino">
+    <label for="femenino">Mujer</label>
+    <input type="radio" id="prefiero-no-decir" name="genero" value="prefiero-no-decir">
+
+    <label for="prefiero-no-decir">Otro</label>
+
+
+    <p> Una breve descripción de ti:</p>
+    <textarea name="description" rows="10" cols="35"></textarea><br>
+    <br>
+    <br>
+
+
+    <label for="lenguajes">Lenguaje Favorito:</label>
+    <select id="lenguajes" name="lenguajes"> 
+        <option value="1">HTML</option> 
+        <option value="2">CSS</option>
+        <option value="3">JavaScript</option>
+    </select>
+    <br>
+
+    <br>
+    <input type="submit" value="Enviar">
+
+
+    <br>
+    <br>
+    <br>
+
+    </form>
+</body>
+
+</html>

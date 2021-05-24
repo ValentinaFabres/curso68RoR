@@ -9,7 +9,7 @@ mkdir -> crear carpeta
 GIT
 
 git config --global user.name "lkjdfghui kufhk kudhfkuh"
-git config --global user.email "palmapalma@gmail.com"
+git config --global user.email "valentina.fabreso@gmail.com"
 
 
 git init

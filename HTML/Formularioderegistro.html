@@ -2,79 +2,86 @@
 <html lang="es">
 
 <head>
-    <form action="process.php" method="post">
-        <p>Mi Formulario de Registro</p>
-        <br> <label for="nombre">Nombre:</label>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulario de Registro</title>
 </head>
 
 <body>
-    <input type="text" id="nombre" name="nombre">
-    <br>
-    <br>
+    <div>
+        <form action="process.php" method="post">
+            <h1>Mi Formulario de Registro</h1>
+            <br> <label for="nombre">Nombre:</label>
 
-    <label for="apellido">Apellido:</label>
+            <input type="text" id="nombre" name="nombre">
+            <br>
+            <br>
 
-    <input type="text" id="apellido" name="apellido">
-    <br>
-    <br>
-    <label for="email">Email:</label>
-    <input type="text" id="email" name="email">
-    <br>
-    <br>
+            <label for="apellido">Apellido:</label>
 
-    <label for="Contraseña">Contrase&ntilde;a:</label>
+            <input type="text" id="apellido" name="apellido">
+            <br>
+            <br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+            <br>
+            <br>
 
-    <input type="text" id="Contraseña" name="Contraseña">
-    <br>
-    <br>
+            <label for="Contraseña">Contraseña:</label>
 
-    <label for="Confirmar">Confirmar:</label>
+            <input type="text" id="Contraseña" name="Contraseña">
+            <br>
+            <br>
 
-    <input type="text" id="Confirmar" name="Confirmar">
-    <br>
+            <label for="Confirmar">Confirmar:</label>
 
-    <br>
-    <meta charset="UTF-8">
-    <label for="fecha">Cumpleaños:</label>
+            <input type="text" id="Confirmar" name="Confirmar">
+            <br>
 
-    <input type="date" id="fecha" name="Cumpleaños">
-    <br>
-    <br>
-    <p>Selecciona tu género:</p>
-    <br>
+            <br>
 
-    <input type="radio" id="masculino" name="genero" value="masculino">
-    <label for="masculino">Hombre</label>
-    <input type="radio" id="femenino" name="genero" value="femenino">
-    <label for="femenino">Mujer</label>
-    <input type="radio" id="prefiero-no-decir" name="genero" value="prefiero-no-decir">
+            <label for="fecha">Cumpleaños:</label>
 
-    <label for="prefiero-no-decir">Otro</label>
+            <input type="date" id="fecha" name="Cumpleaños">
+            <br>
+            <br>
+            <p>Selecciona tu género:</p>
+            <br>
 
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Hombre</label>
+            <input type="radio" id="femenino" name="genero" value="femenino">
+            <label for="femenino">Mujer</label>
+            <input type="radio" id="prefiero-no-decir" name="genero" value="prefiero-no-decir">
 
-    <p> Una breve descripción de ti:</p>
-    <textarea name="description" rows="10" cols="35"></textarea><br>
-    <br>
-    <br>
+            <label for="prefiero-no-decir">Otro</label>
 
 
-    <label for="lenguajes">Lenguaje Favorito:</label>
-    <select id="lenguajes" name="lenguajes"> 
+            <p> Una breve descripción de ti:</p>
+            <textarea name="description" rows="10" cols="35"></textarea><br>
+            <br>
+            <br>
+
+
+            <label for="lenguajes">Lenguaje Favorito:</label>
+            <select id="lenguajes" name="lenguajes"> 
         <option value="1">HTML</option> 
         <option value="2">CSS</option>
         <option value="3">JavaScript</option>
     </select>
-    <br>
+            <br>
 
-    <br>
-    <input type="submit" value="Enviar">
+            <br>
+            <input type="submit" value="Enviar">
 
 
-    <br>
-    <br>
-    <br>
+            <br>
+            <br>
+            <br>
 
-    </form>
+        </form>
+    </div>
 </body>
 
 </html>

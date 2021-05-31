@@ -10,7 +10,7 @@
     background-color: #245076;
     width: 970px;
     /*ancho*/
-    height: 600px;
+    height: 800px;
     /*alto*/
 }
 
@@ -109,4 +109,12 @@ form.example button:hover {
 
 .parrafoB {
     color: yellow;
+}
+
+#fondo-blanco {
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
 }

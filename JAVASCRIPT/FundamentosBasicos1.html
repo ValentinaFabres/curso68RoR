@@ -22,6 +22,23 @@
 
         }
         console.log("resultado: " + del1Al255());
+
+        function paresHastaMil() {
+            var sumaTotal = 0;
+
+            for (var i = 1; i <= 1000; i++) {
+                if (i % 2 == 0) {
+                    // 5/2=2 (resto 1), -7/2=3 (resto-1)
+                    //50/2=25 (resto 0), -40/2=-20(resto 0)
+                    console.log("es par");
+
+                    sumaTotal = sumaTotal + i;
+                }
+
+            }
+            return sumaTotal;
+        }
+        console.log(paresHastaMil())
     </script>
 
 

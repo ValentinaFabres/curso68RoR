@@ -8,8 +8,8 @@
     <title>JavaScript 68</title>
     <script>
         /* esto son comentarios
-                                                                                                                                como 
-                                                                                                                                queramos*/
+                                                                                                                                        como 
+                                                                                                                                        queramos*/
         /* Ejercicios Funcion basica */
 
         function a() {
@@ -47,6 +47,109 @@
         }
         console.log(a(10)); //10*4= 40; 
         //respuesta: 40
+        /*Ejercicio 6*/
+        function a(b) { //b=15
+            if (b < 10) {
+                return 2;
+            }    
+            else {
+                return 4;
+            }
+            console.log(b); //nunca se ejecutara
+        }
+        console.log(a(15)); //console.log(4)
+
+        //respuesta: 4
+        /*Ejercicio 7*/
+        function a(b, c) {
+            return b * c;
+        }
+        console.log(10, 3); //pide que solo imprima el valor
+        console.log(a(3, 10)); //aqui llama a la funcion
+        //respuesta: 10,3,30
+        /*Ejercicio 8*/
+        function a(b) {
+            for (var i = 0; i < 10; i++) {
+                console.log(i);
+            }
+            return i;
+        }
+        console.log(3);
+        console.log(4);
+
+        //respuesta: 3,4
+        /*Ejercicio 9*/
+        function a() {
+            //variable = variable + algo; acumuladores
+            for (var i = 0; i < 10; i++) { //i=0>2>3>5>6>7>8>9>11>12
+                i = i + 2; //
+                console.log(i);
+            }
+        }
+        a(); //llamado a la función
+        //Respuesta: 2,5,8,11
+        /* Ejercicio 10*/
+        function a(b, c) { //b=0 , c=10
+            // var i=0; i>10; i++
+            //i>0>1>2>3>4>5>6>7>8>9>10
+            for (var i = b; i < c; i++) { //i++= se suma 1
+                console.log(i);
+            }
+            return b * c; //retorno 0*10; retorno 0;
+        }
+        a(0, 10); //0
+        console.log(a(0, 10)); // console.log (0)
+        //Respuesta: 0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0
+        /*Ejercicio 11*/
+        function a() {
+            for (var i = 0; i < 10; i++) {
+                for (var j = 0; j < 10; j++) {
+                    console.log(j);
+                }
+                console.log(i);
+            }
+        }
+        //Respuesta: No llama a la función
+        /*Ejercicio 12*/
+        function a() {
+            for (var i = 0; i < 10; i++) {
+                for (var j = 0; j < 10; j++) {
+                    console.log(i, j);
+                }
+                console.log(j, i);
+            }
+        }
+        //Respuesta: No llama a la función
+        /*Ejercicio 13*/
+        var z = 10; //Declaracion de variable
+
+        function a() {
+            var z = 15;
+            console.log(z);
+        }
+        console.log(z); //console.log(10)
+        //Respuesta: 10
+        /*Ejercicio 14*/
+        var z = 10;
+
+        function a() {
+            var z = 15;
+            console.log(z); //console.log (15)
+        }
+        a(); //no pasa nada porque no hay retorno
+        console.log(z);
+        //Repuesta: 15, 10
+        /*Ejercicio 15*/
+        var z = 10;
+
+        function a() {
+            var z = 15;
+            console.log(z);
+            return z; //retorna 15;
+        }
+        z = a(); //z=15
+        console.log(z);
+        //Respuesta: 15, 15
     </script>
 
 

@@ -1,6 +1,90 @@
-#header {
-    background-color: rgb(72, 72, 228);
+#logo {
+    width: 400px;
+    margin-left: 10px;
+    /*relleno*/
+    display: inline-block;
+    vertical-align: top;
+}
+
+#fondo {
+    background-color: #245076;
     width: 970px;
+    /*ancho*/
+    height: 600px;
+    /*alto*/
+}
+
+#text-size {
+    text-align: right;
+    color: white;
+    padding: 15px;
+}
+
+#text-size a {
+    color: yellow;
+}
+
+body {
+    font-family: Arial;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 11px;
+    border: 1px solid grey;
+    float: left;
+    background: #f1f1f1;
+    text-align: center;
+    margin-left: 25px;
+}
+
+form.example button {
+    float: left;
+    padding: 5px;
+    background: #2196F3;
+    color: white;
+    font-size: 15px;
+    border: 1px solid rgb(241, 240, 240);
+    cursor: pointer;
+    margin-left: 7px;
+    border-radius: 10px;
+}
+
+form.example button:hover {
+    background: #0b7dda;
+}
+
+#search {
+    background-color: rgb(77, 65, 65);
+    width: 250px;
+    height: 61px;
+    border-radius: 10px;
+    /*para que el borde sea redondo*/
+    margin-left: 290px;
+    text-align: center;
+    /*para centrar el texto*/
+}
+
+.fa-search:before {
+    display: none;
+}
+
+#go {
+    margin-left: 7px;
+}
+
+.example {
+    padding-top: 17px;
+}
+
+#logo,
+#search {
+    display: inline-block;
+    vertical-align: top;
 }
 
 #menu {

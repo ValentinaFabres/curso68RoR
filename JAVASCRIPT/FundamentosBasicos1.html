@@ -23,6 +23,8 @@
         }
         console.log("resultado: " + del1Al255());
 
+        /*Ejercicio 2*/
+
         function paresHastaMil() {
             var sumaTotal = 0;
 
@@ -39,6 +41,67 @@
             return sumaTotal;
         }
         console.log(paresHastaMil())
+
+        //Ejercicio 3
+        function sumaImpares() {
+            var sumaImpares = 0;
+            //variable = variable + algo (acumular)
+            for (var i = inicio; i <= fin; i++) {
+                if (i % 2 != 0) { //numero impares, positivos o negativos
+                    sumaImpares = sumaImpares + i;
+                }
+            }
+            return sumaImpares;
+        }
+        var resultado3 = sumaImpares();
+        console.log("resultado 3: " + resultado3);
+
+        /*variación del ejercicio 3*/
+        function sumaImpares(inicio, fin) {
+            var array = [];
+            var sumaImpares = 0;
+            var sumaPares = 0;
+            //variable = variable + algo (acumular)
+            for (var i = inicio; i <= fin; i++) {
+                if (i % 2 != 0) { //numero impares, positivos o negativos
+                    sumaImpares = sumaImpares + i;
+                } else {
+                    sumaPares = sumaPares + i;
+                }
+            }
+            array.push(sumaImpares);
+            array.push(sumaPares);
+            return array;
+        }
+        console.log("resultado 3: " + sumaImpares(0, 1000));
+        /* ejercicio 4*/
+        function iteraUnArray(array) {
+            //array.length -> tamaño del arreglo (3)
+            //array[array.length-1] (posicion 2), [1,2,5] 
+            var sumaArray = 0;
+            //for(var i = 0;i <= array.length-1 ;i++){
+            for (var i = 0; i < array.length; i++) { //i es utilizado para la posicion
+                sumaArray = sumaArray + array[i]; //array[i] ->obtener el elemento por posicion, dentro del arreglo
+            }
+            return sumaArray;
+        }
+
+        console.log("resultado 4.1: " + iteraUnArray([1, 2, 5]));
+        console.log("resultado 4.2: " + iteraUnArray([-5, 2, 5, 12]));
+        /*ejercicio 5*/
+
+        function encuentraElMayor(array) {
+            var numeroMayor = array[0]; //se inicializa para comparar el primer elemento del array
+            for (var i = 0; i < array.length; i++) {
+                if (numeroMayor < array[i]) { //si se cumple la condicion
+                    numeroMayor = array[i]; // se reemplaza el valor 
+                }
+            }
+
+            return numeroMayor;
+        }
+        console.log(encuentraElMayor([-3, -1, -5]));
+        console.log(encuentraElMayor([-3, 3, 5, 7]));
     </script>
 
 

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmos 4</title>
+    <script>
+        /*Configura un array para que los valores negativos se transformen en 0.
+                                                                         Por ejemplo, resetNegativos([1,2,-1,-3]) debiera dar como resultado [1,2,0,0]. */
+        function resetNegativos(arreglo) {
+            for (let i = 0; i < arreglo.length; i++) {
+                if (arreglo[i] < 0) {
+                    arreglo[i] = 0;
+                }
+            }
+            console.log(arreglo);
+            //return arreglo;
+        }
+        resetNegativos([1, 2, -1, -3]);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

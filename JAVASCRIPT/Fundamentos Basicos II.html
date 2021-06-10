@@ -49,15 +49,42 @@
         }
         console.log(cambiaHaciaElCentro([1, 2, 3, 4, 5, 6]));
 
+        //Opcion 2
+
+        function cambiaHaciaElCentro(array) {
+            var primer = [];
+            var tercero = [];
+            primer = array[array.length - 1];
+            array[array.length - 1] = array[0];
+            array[0] = primer;
+            tercero = array[array.length / 2];
+            array[array.length / 2] = array[(array.length / 2) - 1];
+            array[(array.length / 2) - 1] = tercero;
+            return array
+        }
+        console.log(cambiaHaciaElCentro(["true", 42, "Ada", 2, "pizza"])); //cambia el array a[“pizza¨, 42, “Ada”, 2, true]
+
+
         //Ejercicio 12
         /*Siempre hambriento - Crea una función que acepte un array 
         e imprima (print) “yummy” cada vez que alguno de los valores 
         sea “comida”. Si ningún valor es “comida”, entonces imprime 
         “tengo hambre” una vez. */
 
-        function siempreHambriento() {
+        function siempreHambriento(array) {
+            var contador = 0;
 
+            for (var i = 0; i < array.length; i++) {
+                if (array[i] === "comida") {
+                    console.log("yummi")
+                    contador++
+                }
+            }
+            if (contador === 0) {
+                console.log("tengo hambre")
+            }
         }
+        siempreHambriento(["jugo", "kalipso", 2]);
     </script>
 
 </body>

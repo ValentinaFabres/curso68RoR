@@ -7,12 +7,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap-5.0.1-dist/css/bootstrap.min.css">
     <title>Pagina boostrap</title>
+    <style>
+        #punteando {
+            border-style: dotted;
+            border-width: 2px;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="container-fluid">
+        <h1> Hola clase</h1>
+        <div class="card" style="width: 18rem;">
+            <img src="CSS/Imagenes/descarga.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Mi pagina</h5>
+                <p class="card-text">Esto es un texto dentro del parrafo</p>
+                <a href="http://learn.codingdojo.com/m/166/6239/43863" class="btn btn-primary">Coding Dojo</a>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button id="punteando" type="button">Punteandos</button>
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
 
-    <h1> Hola clase</h1>
-
+        <button type="button" class="btn btn-link">Link</button>
+    </div>
 </body>
 <script src="bootstrap-5.0.1-dist/js/bootstrap.bundle.min.js"></script>
 

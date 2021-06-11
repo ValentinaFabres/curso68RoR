@@ -75,16 +75,16 @@
             var contador = 0;
 
             for (var i = 0; i < array.length; i++) {
-                if (array[i] === "comida") {
+                if (array[i] == "comida") {
                     console.log("yummi")
                     contador++
                 }
             }
-            if (contador === 0) {
+            if (contador == 0) {
                 console.log("tengo hambre")
             }
         }
-        siempreHambriento(["jugo", "kalipso", 2]);
+        siempreHambriento(["jugo", "comida", "kalipso", 2]);
     </script>
 
 </body>

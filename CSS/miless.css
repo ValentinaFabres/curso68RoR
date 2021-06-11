@@ -2,3 +2,23 @@
     margin: 0px;
     padding: 0px;
 }
+
+#container {
+    background-color: beige;
+    width: 800px;
+    height: auto;
+}
+
+#div1 {
+    background-color: aqua;
+    width: 90%;
+}
+
+#div2 {
+    background-color: rgb(67, 153, 59);
+}
+
+#div3 {
+    background-color: blue;
+    width: 90%;
+}

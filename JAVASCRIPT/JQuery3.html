@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $('document').ready(function() {
+            $('#boton1').click(function() {
+                console.log("Funcion click");
+            });
+            //hide
+            $('#boton2').click(function() {
+                $('#parrafo2').hide();
+            });
+            $('#parrafo2').click(function() {
+                $('#parrafo2').hide();
+            });
+            //show 
+            $('#boton3').click(function() {
+                $('#parrafo2').show();
+            });
+            //toggle contrario al momento
+            $('#boton4').click(function() {
+                $('#parrafo2').toggle();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1>FUNCION CLICK</h1>
+        <p>Clickea el boton para ejecutar el evento click</p>
+        <button id="boton1">Funcion click</button>
+        <hr>
+        <h1>FUNCION HIDE</h1>
+        <p id="parrafo2">Clickea el boton para ejecutar el evento hide</p>
+        <button id="boton2">Funcion hide</button>
+        <button id="boton3">Funcion show</button>
+        <button id="boton4">Funcion toggle</button>
+        <hr>
+    </div>
+</body>
+
+</html>

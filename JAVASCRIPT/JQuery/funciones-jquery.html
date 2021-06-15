@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $('document').ready(function() {
+            $('#boton1').click(function() {
+                console.log("Funcion click");
+            });
+            //hide
+            $('#boton2').click(function() {
+                $('#parrafo2').hide();
+            });
+            $('#parrafo2').click(function() {
+                $('#parrafo2').hide();
+            });
+            //show 
+            $('#boton3').click(function() {
+                $('#parrafo2').show();
+            });
+            //toggle contrario al momento
+            $('#boton4').click(function() {
+                $('#parrafo2').toggle();
+            });
+            //slideDown
+            $('#down').click(function() {
+                $('#parrafo3').slideDown(1000);
+            });
+            //slideUp 
+            $('#up').click(function() {
+                $('#parrafo3').slideUp("slow");
+            });
+            //slideToggle contrario al momento
+            $('#toggle').click(function() {
+                $('#parrafo3').slideToggle();
+            });
+            //fadeIn 
+            $('#in').click(function() {
+                $('#parrafo4').fadeIn();
+            });
+            //fadeOut
+            $('#out').click(function() {
+                $('#parrafo4').fadeOut();
+            });
+            //addClass
+            $('#boton10').click(function() {
+                $('#parrafo5').addClass("ejemplo");
+            });
+            //.before
+            $('#before').click(function() {
+                $('#parrafo6').before("<br> before");
+            });
+            //.after
+            $('#after').click(function() {
+                $('#parrafo6').after("<br> after");
+            });
+            //append y html
+            $('#append').click(function() {
+                $('#parrafo7').append(" <br> Este es un texto nuevo ");
+            });
+            $('#html').click(function() {
+                $('#parrafo7').html(" <br> Esto es html? ");
+            });
+            // ATTR, VAL Y TEXT
+            $('#attr').click(function() {
+                $('#parrafo8').attr("HOLA ATTR");
+            });
+            $('#val').click(function() {
+                $('#parrafo8').val("HOLA VAL");
+            });
+            $('#text').click(function() {
+                $('#parrafo8').text(" <br> Esto es por el elemento text ");
+            });
+
+        });
+    </script>
+
+    <style>
+        .ejemplo {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>FUNCION CLICK</h1>
+        <p>Clickea el boton para ejecutar el evento click</p>
+        <button id="boton1">Funcion click</button>
+        <hr>
+        <h1>FUNCION HIDE</h1>
+        <p id="parrafo2">Clickea el boton para ejecutar el evento hide</p>
+        <button id="boton2">Funcion hide</button>
+        <button id="boton3">Funcion show</button>
+        <button id="boton4">Funcion toggle</button>
+        <hr>
+        <h1>FUNCION SLIDE</h1>
+        <p id="parrafo3">Clickea el boton para ejecutar el evento SLIDE</p>
+        <button id="up">Funcion slideUp</button>
+        <button id="down">Funcion slideDown</button>
+        <button id="toggle">Funcion slideToggle</button>
+        <hr>
+        <h1>FUNCION FADE</h1>
+        <p id="parrafo4">Clickea el boton para ejecutar el evento FADE IN/OUT</p>
+        <button id="in">Funcion fadeIn</button>
+        <button id="out">Funcion fadeOut</button>
+        <h1>FUNCION ADDCLASS</h1>
+        <p id="parrafo5">Clickea el boton para ejecutar el evento add class</p>
+        <button id="boton10">Funcion ADDCLASS</button>
+        <hr>
+        <h1>FUNCION BEFORE/AFTER</h1>
+        <p id="parrafo6">Clickea el boton para ejecutar BEFORE o AFTER</p>
+        <button id="before">Funcion Before</button>
+        <button id="after">Funcion after</button>
+        <hr>
+        <h1>FUNCION APPEND Y HTML</h1>
+        <p id="parrafo7">El Append agrega más texto y el html vuelve todo al inicio</p>
+        <button id="append">Funcion APPEND</button>
+        <button id="html">Funcion HTML</button>
+        <hr>
+        <h1>FUNCION ATTR, VAL Y TEXT</h1>
+        <p id="parrafo8">Aqui veremos el ATTR , VAL Y TEXT </p>
+        <button id="attr">Boton ATTR</button>
+        <button id="val">Boton .VAL</button>
+        <button id="text">Boton text</button>
+        <hr>
+    </div>
+</body>
+
+</html>

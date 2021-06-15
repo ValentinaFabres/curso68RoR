@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JQuery::</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        //Esta etiqueta es la principal para JQuery
+        $(document).ready(function() {
+            /*Inicio JQuery*/
+            //etiqueta
+            $('button').click(function() {
+                console.log("Estoy en JQuery desde Button");
+                alert("Estoy en JQuery desde Button");
+            });
+            // generico para todas las etiquetas del tipo
+            $('input').click(function() {
+                console.log("Estoy en JQuery desde Input");
+                alert("Estoy en JQuery desde Input");
+            });
+            //etiqueta.clase 
+            //especificos para un tipo de elemento y su clase
+            $('input.input2').click(function() {
+                console.log("Estoy en JQuery desde Input.clase");
+                alert("Estoy en JQuery desde Input.clase");
+            });
+            //funcionalidad por clase (.)
+            // se ejecuta para cualquier elemento que posea la clase
+            $('.input2').click(function() {
+                console.log("Estoy en JQuery desde Input por clase");
+                alert("Estoy en JQuery desde Input por clase");
+            });
+            //funcionalidad por id (#)
+            // solo para el elemento con el id
+            $('#input3').click(function() {
+                console.log("Estoy en JQuery desde Input por id");
+                alert("Estoy en JQuery desde Input por id");
+            });
+
+            /*Ejercicio de JQuery*/
+            var indice = 0;
+            $('#input4').click(function() {
+                console.log($('#parrafo').text());
+                $('#parrafo').text("Esto es un parrafo");
+                //var array = ["texto 1", "Texto 2", "Texto 3", "Texto 4"];
+                //$('#parrafo').text(array[indice]);
+                //indice++;
+            });
+
+            /*fin JQuery*/
+        });
+    </script>
+
+</head>
+
+<body>
+    <div>
+        <button>JQuery</button>
+        <input type="button" value="boton 1">
+        <input type="button" value="boton 2" class="input2">
+        <input type="button" value="boton 3" id="input3">
+        <input type="button" value="cambiar parrafo" id="input4">
+        <p id="parrafo" class="input2">Esto es un parrafosdod</p>
+
+    </div>
+</body>
+
+</html>
